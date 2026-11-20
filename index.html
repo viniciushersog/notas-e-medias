@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cálculo de Média Escolar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="caixa">
+    <h1>Cálculo de Média Escolar</h1>
+
+    <form id="formulario" novalidate>
+      <label for="nome">Nome do aluno</label>
+      <input id="nome" type="text" placeholder="Digite o nome">
+
+      <label for="nota1">Nota 1</label>
+      <input id="nota1" type="number" step="0.1">
+
+      <label for="nota2">Nota 2</label>
+      <input id="nota2" type="number" step="0.1">
+
+      <label for="nota3">Nota 3</label>
+      <input id="nota3" type="number" step="0.1">
+
+      <div id="erros" class="erros"></div>
+
+      <div class="botoes">
+        <button type="submit" class="btn-calcular">Calcular</button>
+        <button type="button" id="btnLimpar" class="btn-limpar">Limpar</button>
+      </div>
+    </form>
+
+    <div id="resultado" class="resultado">
+      <p><strong>Aluno:</strong> <span id="resNome"></span></p>
+      <p><strong>Média:</strong> <span id="resMedia"></span></p>
+      <p>
+        <strong>Situação:</strong>
+        <span id="resSituacao" class="situacao"></span>
+      </p>
+      <p><strong>Média geral da turma:</strong> <span id="resTurma"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
